@@ -1,0 +1,10 @@
+from dotenv import load_dotenv
+import os
+
+# Load .env file
+load_dotenv()
+
+# Access variables
+SECRET_KEY = os.getenv("SECRET_KEY")
+STREAMLIT_USERNAME = os.getenv("STREAMLIT_USERNAME")
+STREAMLIT_PASSWORD = os.getenv("STREAMLIT_PASSWORD")
